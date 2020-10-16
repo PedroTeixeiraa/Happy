@@ -39,13 +39,16 @@ export class createOrphanages1602878723777 implements MigrationInterface {
           type: 'text',
         },
         {
+          name: 'opening_hours',
+          type: 'varchar',
+        },
+        {
           name: 'open_on_weekends',
           type: 'boolean',
           default: false,
         }
       ]
     }))
-
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
