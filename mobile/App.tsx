@@ -44,7 +44,7 @@ export default function App() {
           </TouchableOpacity>
       </View>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
