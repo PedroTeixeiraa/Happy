@@ -1,11 +1,40 @@
 <p align=center>
-<img src="https://user-images.githubusercontent.com/54821438/96716540-8c426a00-137b-11eb-9df0-12b0384bc398.png">
+  <img src="https://user-images.githubusercontent.com/54821438/96795474-d5bfa300-13d5-11eb-8e1e-71a18107905c.png">
 </p>
 
+<h2 align="center">
+  Happy - Make children's day happy
+</h2>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/pedro-teixeira-alves/" rel="nofollow">
+    <img alt="Made by" src="https://img.shields.io/badge/Pedro%20Teixeira-made%20by-blue"style="max-width:100%;">
+  </a>
+  <a target="_blank" rel="noopener noreferrer" href="https://img.shields.io/github/repo-size/PedroTeixeiraa/Happy">
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/PedroTeixeiraa/Happy" style="max-width:100%;">
+  </a>
+  <a href="https://github.com/PedroTeixeiraa/Happy/commits/main">
+     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/PedroTeixeiraa/Happy?color=blue" style="max-width:100%;">
+  </a>
+  <a target="_blank" rel="noopener noreferrer" href="https://img.shields.io/github/license/PedroTeixeiraa/Happy?color=blue">
+    <img alt="GitHub" src="https://img.shields.io/github/license/PedroTeixeiraa/Happy?color=blue"  style="max-width:100%;">
+  </a>
+</p>
+<p align="center">
+  <a href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-license">License</a>
+</p>
+
+<img alt="Happy" src="https://user-images.githubusercontent.com/54821438/96799661-07d30400-13da-11eb-9369-c47be5e3fb22.png" width="100%" style="max-width:100%;">
+
 ## 👨‍💻 About the project
+
 <p>This project was developed on the Next Level Week #03 event by <a href="https://rocketseat.com.br/" rel="nofollow">Rocketseat</a> 🚀 💜</p>
 
 <p>Happy is an application that connects people to institutional care homes to make many children's day happier</p>
+
 ## 🚀 Technologies
 
 <ul>
