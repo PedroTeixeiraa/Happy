@@ -58,7 +58,7 @@
   <li><a href="https://nodejs.org/en/" rel="nofollow">Node.js</a></li>
   <li><a href="https://classic.yarnpkg.com/" rel="nofollow">Yarn</a></li>
   <li><a href="https://expo.io/" rel="nofollow">Expo</a></li>
-<ul>  
+</ul>  
 <pre>$ git clone https://github.com/PedroTeixeiraa/Happy.git <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">cd</span> Happy</pre>
 <p><strong>Follow the steps below</strong></p>
   
