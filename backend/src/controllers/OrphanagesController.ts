@@ -59,8 +59,6 @@ export default {
       images,
     }
 
-    console.log(whatsapp)
-
     const schema = Yup.object().shape({
       name: Yup.string().required(),
       latitude: Yup.number().required(),
