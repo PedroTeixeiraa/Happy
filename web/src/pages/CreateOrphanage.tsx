@@ -2,6 +2,7 @@ import React, { ChangeEvent, FormEvent, useState } from "react";
 import { Map, Marker, TileLayer } from 'react-leaflet';
 import { LeafletMouseEvent } from 'leaflet'
 import { useHistory } from "react-router-dom";
+import InputMask from 'react-input-mask'
 
 import { FiPlus } from "react-icons/fi";
 
@@ -18,6 +19,7 @@ export default function CreateOrphanage() {
 
   const [name, setName] = useState('')
   const [about, setAbout] = useState('')
+  const [whatsapp, setWhatsapp] = useState('')
   const [instructions, setInstructions] = useState('')
   const [opening_hours, setOpeningHours] = useState('')
   const [open_on_weekends, setOpenOnWeekends] = useState(true)
@@ -60,6 +62,7 @@ export default function CreateOrphanage() {
     data.append('latitude', String(latitude))
     data.append('longitude', String(longitude))
     data.append('about', about)
+    data.append('whatsapp', whatsapp)
     data.append('instructions', instructions)
     data.append('opening_hours', opening_hours)
     data.append('open_on_weekends', String(open_on_weekends))
@@ -121,10 +124,18 @@ export default function CreateOrphanage() {
             </div>
 
             <div className="input-block">
+            <label htmlFor="whatsapp">Número de Whatsapp</label>
+              <InputMask 
+                mask="(99) 9 9999 9999" 
+                value={whatsapp} 
+                onChange={e => setWhatsapp(e.target.value.replace(/\D+/g, ''))}
+              />
+            </div>
+
+            <div className="input-block">
               <label htmlFor="images">Fotos</label>
 
               <div className="images-container">
-                {/* CRIAR BOTAO PARA REMOVER IMAGES */}
                 {previewImages.map(image => {
                   return (
                     <img key={image} src={image} alt={name}/>
@@ -195,5 +206,3 @@ export default function CreateOrphanage() {
     </div>
   );
 }
-
-// return `https://a.tile.openstreetmap.org/${z}/${x}/${y}.png`;
