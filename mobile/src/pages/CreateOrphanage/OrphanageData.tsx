@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { ScrollView, View, StyleSheet, Switch, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import { Feather } from '@expo/vector-icons';
-import { RectButton, State } from 'react-native-gesture-handler';
+import { RectButton } from 'react-native-gesture-handler';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import * as ImagePicker from 'expo-image-picker'
 import api from '../../services/api';
+import { TextInputMask } from 'react-native-masked-text'
 
 interface OrphanageDataRouteParams {
   position: {
@@ -16,6 +17,7 @@ interface OrphanageDataRouteParams {
 export default function OrphanageData() {
   const [name, setName] = useState('')
   const [about, setAbout] = useState('')
+  const [whatsapp, setWhatsapp] = useState('')
   const [instructions, setInstructions] = useState('')
   const [opening_hours, setOpeningHours] = useState('')
   const [open_on_weekends, setOpenOnWeekends] = useState(true)
@@ -33,6 +35,7 @@ export default function OrphanageData() {
 
     data.append('name', name)
     data.append('about', about)
+    data.append('whatsapp', whatsapp.replace(/\D+/g, ''))
     data.append('instructions', instructions)
     data.append('opening_hours', opening_hours)
     data.append('open_on_weekends', String(open_on_weekends))
@@ -94,10 +97,14 @@ export default function OrphanageData() {
         onChangeText={setAbout}
       />
 
-      {/* <Text style={styles.label}>Whatsapp</Text>
-      <TextInput
+      <Text style={styles.label}>Whatsapp</Text>
+      <TextInputMask
         style={styles.input}
-      /> */}
+        value={whatsapp}
+        onChangeText={setWhatsapp}
+        type={'cel-phone'}
+      />
+      
 
       <Text style={styles.label}>Fotos</Text>
 
