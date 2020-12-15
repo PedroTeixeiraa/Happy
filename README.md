@@ -103,6 +103,9 @@ $ yarn start
 # Starting from the project root folder, go to mobile folder
 $ cd mobile
 
+# Install the dependencies
+$ yarn 
+
 # Be sure the file 'src/services/api.ts' have the IP to your API
 
 # Start the expo service and scan the QR code with Expo Client
